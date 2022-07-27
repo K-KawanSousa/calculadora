@@ -67,9 +67,9 @@ body{/* configuração de background e alinhamento da calculadora*/
 }
 
 .linha .tecla{
-    width: 10vw;
+    width: 23vw;
     max-width: 75px;
-    height: 10vw;
+    height: 23vw;
     max-height: 75px;
 
     background-color: transparent;
