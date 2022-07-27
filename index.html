@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="C-display">
+            <input type="text" name="hist" id="hist" value="777" disabled>
+            <input type="text" name="res" id="res" value="" disabled>
+        </div>
+        <div id="C-teclado">
+            <div class="linha">
+                <button class="tecla" onclick="limpa()">AC</button>
+                <button class="tecla" onclick="apaga()">DEL</button>
+                <button class="tecla" onclick="escreve('&#40;')">(</button>
+                <button class="tecla" onclick="escreve('&#41;')">)</button>
+            </div>
+
+            <div class="linha">
+                <button class="tecla" onclick="escreve('7')">7</button>
+                <button class="tecla" onclick="escreve('8')">8</button>
+                <button class="tecla" onclick="escreve('9')">9</button>
+                <button class="tecla" onclick="escreve('÷')">÷</button>
+            </div>
+
+            <div class="linha">
+                <button class="tecla" onclick="escreve('4')">4</button>
+                <button class="tecla" onclick="escreve('5')">5</button>
+                <button class="tecla" onclick="escreve('6')">6</button>
+                <button class="tecla" onclick="escreve('*')">×</button>
+            </div>
+
+            <div class="linha">
+                <button class="tecla" onclick="escreve('1')">1</button>
+                <button class="tecla" onclick="escreve('2')">2</button>
+                <button class="tecla" onclick="escreve('3')">3</button>
+                <button class="tecla" onclick="escreve('-')">-</button>
+            </div>
+
+            <div class="linha">
+                <button class="tecla" onclick="escreve('.')"value=".">.</button>
+                <button class="tecla" onclick="escreve('0')">0</button>
+                <button class="tecla" onclick="calc()">=</button>
+                <button class="tecla" onclick="escreve('+')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
